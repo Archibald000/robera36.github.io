@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <script src=main.js></script>
   <div class="container">
     <header class="header">
       <h1>Golfer Gang</h1>
@@ -21,39 +22,39 @@
       </div>
     </header>
     <aside class="left">
-      <!-- <img src="./assets/html/mr-camel.jpg" width="160px" /> -->
       <ul>
-        <li><a class="active" href=index.html>Home</a></li>
-        <li><a href=Photos.html>Photos</a></li>
+        <li><a href=index.html>Home</a></li>
+        <li><a class="active" href=Photos.html>Photos</a></li>
         <li><a href=Contact.html>Contact</a></li>
         <li><a href=About.html>About</a></li>
       </ul>
       <br><br>
       <p>“Mistakes are part of the game. It’s how well you recover from them, that’s the mark of a great player.”<br>- Alice Cooper</p>
     </aside>
-    <main class="content">
-      <h2>About Us</h2>
-      <p>We are a group dedicated to pursuing the mastery of golf (and having fun)</p>
-      <hr><br>
-      <h2>What do we offer?</h2>
-      <table>
-        <tr>
-          <th>HOLES</th>
-          <th>CLUBS</th>
-          <th>DRINKS</th>
-        </tr>
-        <tr>
-          <td><i class="fas fa-flag"></i></td>
-          <td><i class="fas fa-blind"></i></td>
-          <td><i class="fas fa-beer"></i></td>
-        </tr>
-        <tr>
-          <td>Most amount of holes in the region</td>
-          <td>High quality, strong clubs</td>
-          <td>Delicious and refreshing drinks</td>
-        </tr>
-        <tr>
-      </table>
+
+<main class="content">
+    <h2>Photos</h2>
+    <hr><br>
+    <table>
+
+<div class="row">
+  <div class="column">
+    <img src="golf1.jpg" alt="Golf" style="width:100%" onclick="ImageClick(this);">
+  </div>
+  <div class="column">
+    <img src="golf2.jpg" alt="Golf" style="width:100%" onclick="ImageClick(this);">
+  </div>
+  <div class="column">
+    <img src="golf3.jpg" alt="Golf" style="width:100%" onclick="ImageClick(this);">
+  </div>
+</div>
+
+<div class="imagecontainer">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+<br>
     </main>
   </div>
 </body>

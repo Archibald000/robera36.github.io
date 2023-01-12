@@ -23,37 +23,26 @@
     <aside class="left">
       <!-- <img src="./assets/html/mr-camel.jpg" width="160px" /> -->
       <ul>
-        <li><a class="active" href=index.html>Home</a></li>
+        <li><a href=index.html>Home</a></li>
         <li><a href=Photos.html>Photos</a></li>
-        <li><a href=Contact.html>Contact</a></li>
+        <li><a class="active" href="#contact">Contact</a></li>
         <li><a href=About.html>About</a></li>
       </ul>
       <br><br>
       <p>“Mistakes are part of the game. It’s how well you recover from them, that’s the mark of a great player.”<br>- Alice Cooper</p>
     </aside>
     <main class="content">
-      <h2>About Us</h2>
-      <p>We are a group dedicated to pursuing the mastery of golf (and having fun)</p>
+      <h2>Contact Us</h2>
+      <p>Get in contact to hear about our golfing escapades!</p>
       <hr><br>
-      <h2>What do we offer?</h2>
+      <h2>How Can We Help You?</h2>
       <table>
-        <tr>
-          <th>HOLES</th>
-          <th>CLUBS</th>
-          <th>DRINKS</th>
-        </tr>
-        <tr>
-          <td><i class="fas fa-flag"></i></td>
-          <td><i class="fas fa-blind"></i></td>
-          <td><i class="fas fa-beer"></i></td>
-        </tr>
-        <tr>
-          <td>Most amount of holes in the region</td>
-          <td>High quality, strong clubs</td>
-          <td>Delicious and refreshing drinks</td>
-        </tr>
-        <tr>
-      </table>
+      <form>
+        <label>Email: <input type="text" name="email"></label><br>
+        <label> Mobile: <input type="text" name="mobile"> </label><br>
+        <textarea name="comments" rows="4">Enter your message</textarea><br>
+        <input type="submit" value="Submit" onclick="alert('Thanks for your query')"/><br>
+      </form>
     </main>
   </div>
 </body>
